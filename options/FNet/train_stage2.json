@@ -1,0 +1,79 @@
+{
+    "task": "Infrared_Visible_Fusion" //  classical image sr for x2/x3/x4. root/task/images-models-options
+    ,
+    "model": "plain_stage2" // "plain_stage1" | "plain_stage2" 
+    ,
+    "gpu_ids": [
+      0
+    ],
+    "dist": false,
+    "n_channels": 1 
+    ,
+    "path": {
+      "root": "Model/stage1" 
+      ,
+      "pretrained_netG": null // path of pretrained model. 
+      ,
+      "pretrained_netE": null // path of pretrained model
+    },
+    "datasets": {
+      "train": {
+        "name": "train_dataset" // just name
+        ,
+        "dataset_type": "mmif"  
+        ,
+        "dataroot_A": "datasets/train_dataset/MSRS/IR" // path of modality 2 training images
+        ,
+        "dataroot_B": "datasets/train_dataset/MSRS/VI_Y" // path of modality 1 training images
+        ,
+        "H_size": 128 
+        ,
+        "dataloader_shuffle": true,
+        "dataloader_num_workers": 12,
+        "dataloader_batch_size": 16 // Total batch size 
+      }
+    },
+    "netG": {
+      "net_type": "fnet",
+	  "init_type": "default"
+    },
+    "train": {
+	  "manual_seed": 0,
+	  "total_iter": 20000, // 20000
+      "G_lossfn_type": "loss_stage2" // "l1" preferred | "l2sum" | "l2" | "ssim" | "charbonnier"
+      ,
+      "G_lossfn_weight": 1.0 // default
+      ,
+      "E_decay": 0.999 // Exponential Moving Average for netG: set 0 to disable; default setting 0.999
+      ,
+      "G_optimizer_type": "adam" // fixed, adam is enough
+      ,
+      "G_optimizer_lr": 1e-4 // learning rate
+      ,
+      "G_optimizer_wd": 0 // weight decay, default 0
+      ,
+      "G_optimizer_clipgrad": null // unused
+      ,
+      "G_optimizer_reuse": true // 
+      ,
+      "G_scheduler_type": "MultiStepLR" // "MultiStepLR" is enough
+      ,
+      "G_scheduler_milestones": [
+        250000,
+        400000,
+        450000,
+        475000,
+        500000
+      ],
+      "G_scheduler_gamma": 0.5,
+      "G_regularizer_orthstep": null // unused
+      ,
+      "G_regularizer_clipstep": null // unused
+      ,
+      "G_param_strict": true,
+      "E_param_strict": true,
+      "checkpoint_save": 1000 // for saving model
+      ,
+      "checkpoint_print": 200 // for print
+    }
+  }
