@@ -13,7 +13,6 @@ import utils.utils_image as util
 from data.test_dataloder import Dataset as D
 from torch.utils.data import DataLoader
 from models.network_fnet import FNet
-from metrics import metrics
 
 def test(save_dir,a_dir,b_dir,in_channelA,in_channelB,model):
     print(a_dir)
@@ -69,4 +68,3 @@ if __name__ == '__main__':
     model.load_state_dict(torch.load(args.model_path))
     model.eval()
     test(save_dir,a_dir,b_dir,in_channelA,in_channelB,model)
-    metrics(save_dir,args.dataset,a_dir,b_dir)
