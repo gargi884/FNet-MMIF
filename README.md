@@ -2,7 +2,7 @@
 
 Accetped by IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
 
-[arxiv](https://arxiv.org/abs/2411.04519)
+[arxiv](https://arxiv.org/abs/2411.04519)  [Supplementary](https://drive.google.com/file/d/1Y0sRXkg2p226I8sxAlx3V-nk-gBX0LD1/view?usp=drive_link)
 
 ![](figs/demo.gif)
 
