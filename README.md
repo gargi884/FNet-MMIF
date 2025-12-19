@@ -56,10 +56,15 @@ python test.py --color
 If you find the code helpful in your research or work, please cite the following paper.
 
 ```
-@article{panda2024l0,
-  title={l0-regularized sparse coding-based interpretable network for multi-modal image fusion},
+@ARTICLE{11301656,
   author={Panda, Gargi and Kundu, Soumitra and Bhattacharya, Saumik and Routray, Aurobinda},
-  journal={arXiv preprint arXiv:2411.04519},
-  year={2024}
-}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={$\ell _{0}$-Regularized Sparse Coding-based Interpretable Network for Multi-Modal Image Fusion}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-18},
+  keywords={Convolutional codes;Feature extraction;Encoding;Training;Image fusion;Estimation;Sparse approximation;Thresholding (Imaging);Image coding;Reviews; $\ell _{0}$ -regularized convolutional sparse coding;LZSC block;multi-modal image fusion;inverse fusion},
+  doi={10.1109/TPAMI.2025.3643898}}
+
 ```
