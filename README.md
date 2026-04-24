@@ -59,12 +59,13 @@ If you find the code helpful in your research or work, please cite the following
 @ARTICLE{11301656,
   author={Panda, Gargi and Kundu, Soumitra and Bhattacharya, Saumik and Routray, Aurobinda},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
-  title={$\ell _{0}$-Regularized Sparse Coding-based Interpretable Network for Multi-Modal Image Fusion}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={1-18},
-  keywords={Convolutional codes;Feature extraction;Encoding;Training;Image fusion;Estimation;Sparse approximation;Thresholding (Imaging);Image coding;Reviews; $\ell _{0}$ -regularized convolutional sparse coding;LZSC block;multi-modal image fusion;inverse fusion},
+  title={$\ell _{0}$ℓ0-Regularized Sparse Coding-Based Interpretable Network for Multi-Modal Image Fusion}, 
+  year={2026},
+  volume={48},
+  number={4},
+  pages={4081-4097},
+  keywords={Convolutional codes;Feature extraction;Encoding;Training;Image fusion;Estimation;Sparse approximation;Thresholding (Imaging);Image coding;Reviews;  $\ell _{0}$    ℓ 0        ℓ 1      -regularized convolutional sparse coding;inverse fusion;LZSC block;multi-modal image fusion (MMIF)},
   doi={10.1109/TPAMI.2025.3643898}}
+
 
 ```
